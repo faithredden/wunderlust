@@ -66,32 +66,7 @@ h4, p, q, small, nav, button, form{
   font-family:"Montserrat";
 }
 
-/* ----MENU STYLES ----- 
-nav h2{
-  visibility:hidden;
-}
-nav label{
-  background-color: #f6d64a;
-}
-nav ul{
-  overflow: hidden;
-  
-}
-nav li a{
-  background-color: #55bcd5;
-  position: relative;
-  color: black;
-  padding:15px ;
-  text-decoration: none;
-  display: block;
-  text-transform:uppercase;
-  font-weight: bold;
-  display: none;
-  position: absolute;
-}
-nav input{
-  display: none;
-}*/
+
 nav h2{
   visibility:hidden;
 }
@@ -134,7 +109,7 @@ body{
   margin:0 auto;
 }
 header{
-  background:linear-gradient( #55bcd5 25%, #ffffff );
+  background:linear-gradient( #55bcd5 0%, #ffffff );
   padding-bottom:10px;
 }
 h1{
