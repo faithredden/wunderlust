@@ -1,0 +1,446 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ----- SKIP LINK STYLES ----- */
+#skip{
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+   
+  #skip a:focus{
+    position: static;
+    width: auto;
+    height: auto;
+  }
+
+/* -----TEXT STYLES ----- */
+@import url('https://fonts.googleapis.com/css2?family=Molle&family=Montserrat&display=swap');
+h1, h2, h3{
+    font-family: "Molle";
+}
+h4, p, q, small, nav, button, form{
+  font-family:"Montserrat";
+}
+
+/* ----MENU STYLES ----- 
+nav h2{
+  visibility:hidden;
+}
+nav label{
+  background-color: #f6d64a;
+}
+nav ul{
+  overflow: hidden;
+  
+}
+nav li a{
+  background-color: #55bcd5;
+  position: relative;
+  color: black;
+  padding:15px ;
+  text-decoration: none;
+  display: block;
+  text-transform:uppercase;
+  font-weight: bold;
+  display: none;
+  position: absolute;
+}
+nav input{
+  display: none;
+}*/
+nav h2{
+  visibility:hidden;
+}
+
+nav label{
+  background-color: black;
+  color: white; 
+  padding-top:15px;
+  padding-bottom: 15px;
+  padding-left:208px;
+  padding-right: 208px;
+  
+}
+ 
+
+nav li {
+  text-transform:uppercase;
+  font-weight: bold;
+  border:1px solid black;
+  padding:40px;
+  background-color: #55bcd5;
+   text-align: center;
+}
+nav li a{
+   text-decoration: none;
+  color:black;
+ 
+}
+nav{
+  color:black;
+
+}
+
+
+
+/* ----BODY STYLES ----- */
+body{
+  background:white;
+  max-width:480px;
+  margin:0 auto;
+}
+header{
+  background:linear-gradient( #55bcd5 25%, #ffffff );
+  padding-bottom:10px;
+}
+h1{
+  font-size: 60px;
+  padding:5px;
+}
+header p{
+  font-size: 25px;
+  padding: 5px;
+  width:85%;
+  line-height: 1.5;
+}
+h2{
+  font-size: 55px;
+  padding:5px;
+}
+#intro p{
+font-size: 20px;
+line-height: 2;
+padding:5px;
+}
+#intro img{
+  width:480px;
+  padding:5px 0 5px;
+}
+#intro img:last-child{
+  padding-bottom: 35px;
+}
+h3{
+  font-size:45px;
+  padding:5px;
+}
+#plan h3{
+  text-align: center;
+  padding-top:25px;
+  padding-bottom:25px;
+}
+#plan{
+  background-color: #f6d64a;
+  margin:0 auto;
+  width:480px;
+  padding-top:20px;
+  padding-bottom:40px;
+}
+#plan h4{
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  padding:15px;
+}
+#plan section{
+  width:400px;
+  height:300px;
+  background-color: #55bcd5;
+  border:4px solid white ;
+  border-radius:15px;
+  margin:auto;
+}
+#plan div section{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-gap:10px; 
+    justify-items:center;
+  }
+  #plan div{
+    display:grid;
+    grid-gap:10px;
+  }
+#plan img{
+  padding-top:5px;
+  padding-bottom:15px;
+}
+#testimonials h3{
+  padding-top:25px;
+ padding-bottom:25px;
+}
+#testimonials h4{
+  font-size: 25px;
+ font-weight: bold;
+ text-transform: uppercase;
+ text-align: center;
+ padding-top:10px;
+ padding-bottom:5px;
+}
+#testimonials p{
+ text-align: center;
+ font-size:20px;
+ padding:5px;
+}
+q{
+font-size: 20px;
+line-height:1.2;
+text-align:center;
+}
+  
+#testimonials section{
+width:300px;
+margin:auto;
+display:grid;
+grid-template-columns: 1fr;
+justify-items: center;
+padding:15px;
+}
+#about{
+  background-color:#499BD2;
+  width:100%;
+}
+#about h3{
+  padding:25px 15px 25px;
+}
+#about div{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  text-align: center;
+  padding-bottom: 10px;
+}
+#about h4{
+  font-size: 20px;
+ font-weight: bold;
+ text-transform: uppercase;
+}
+#about p{
+  font-size: 18px;
+  line-height:1.5;
+}
+#about img{
+  padding-top:8px;
+  padding-right: 15px;
+}
+
+#contact h3{
+  padding-top:30px;
+  padding-bottom: 15px;
+}
+.form-required{
+  font-size:15px;
+  font-family: montserrat;
+}
+
+form{
+	display: block;
+  padding:20px;
+}
+
+form input, form label, fieldset{
+	display: block;
+}
+form input{
+  width:400px;
+  padding:15px;
+  border:solid 3px #9b26b0;
+  
+}
+#destination,#travelTime{
+  width:435px;
+  padding:15px;
+  border:solid 3px #9b26b0;
+}
+label,legend{
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight:bold;
+  padding-top:8px;
+  padding-bottom: 8px;
+}
+fieldset label{
+  font-weight:normal;
+  text-transform:none;
+}
+input[type='radio']{
+  width:40px;
+    height:40px;
+     accent-color: #9b26b0;
+   
+
+}
+.radio-input, fieldset label{
+  display: flex;
+  align-items: center;
+  padding-right:15px;
+}
+.required{
+  color:#9b26b0;
+}
+
+#mySubmit{
+  background-color: #9b26b0;
+  color:white;
+  text-transform: uppercase;
+  font-weight: bold;
+  border:none;
+  width:435px;
+  margin-top: 20px;
+}
+footer{
+  background-color: #eaeaea;
+  padding-top:30px;
+  padding-bottom: 30px;
+  text-align: center;
+  line-height: 2
+}
+footer a{
+  display:block;
+  text-decoration: none;
+  color:black;
+  font-family: Montserrat;
+}
+
+@media(min-width:900px){
+  body{
+    width:900px;
+    margin-right:50%;
+  }
+  header{
+    width: 860px;
+    padding:20px; 
+  }
+  h1{
+    width:400px; 
+  }
+  header p{
+    width:700px;
+   
+   
+  }
+  #logo, h1{
+    display: inline-flex;
+      flex-wrap: wrap;
+  }
+  
+
+  #intro{
+    width: 850px;
+  }
+  nav label{
+    visibility:hidden;
+  }
+  nav input{
+    visibility: hidden;
+  }
+  
+  nav li{
+    background-color: white;
+    border:none;
+    justify-content: center;
+  }
+ 
+ nav ul{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-template-rows: 1fr;
+   grid-gap: 20px;
+   padding-bottom:20px;
+  }
+  .active{
+    background-color: #f6d64a;
+  }
+  #img-grid{
+    width:850px;
+    display:grid;
+    grid-template-columns: 400px auto;
+    grid-template-rows: 1fr;
+    grid-gap: 15px;  
+  }
+  #img-grid img{
+    width:400px;
+  }
+  #img-grid img[src="images/majorca-cove.png"]{
+    width:500px;
+  }
+  #plan{
+    width:900px;
+  }
+  #plan div{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  #testimonials div{
+    width:900px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:40px;
+  }
+  #about{
+    width:900px;
+  }
+  #about div{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  form{
+      margin-left:25%;
+  }
+  form input{
+    width:600px;
+  }
+  #destination,#travelTime{
+    width:640px
+  }
+  #mySubmit{
+    width:640px
+  }
+  footer{
+    width:900px;
+    
+  }
+}
